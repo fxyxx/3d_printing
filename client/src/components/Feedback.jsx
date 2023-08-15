@@ -23,7 +23,7 @@ const Reviews = React.forwardRef((props, ref) => {
       </h2>
       <div className="flex flex-col justify-center gap-8 overflow-x-hidden img_bg4">
         <div className="img_bg4-1 absolute transform -translate-x-[-150%] -translate-y-[10%] "></div>
-        {/* <Slider {...settingsLeft}>
+        <Slider {...settingsLeft}>
           {usersComments.map((comment, index) => (
             <Card
               cardBorder={CardBorder.HERO}
@@ -49,7 +49,7 @@ const Reviews = React.forwardRef((props, ref) => {
               body={comment.TEXT}
             ></Card>
           ))}
-        </Slider> */}
+        </Slider>
       </div>
     </section>
   );
