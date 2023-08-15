@@ -13,17 +13,17 @@ const useModal = () => {
     setModalIsOpen(false);
   };
 
-  // useEffect(() => {
-  //   if (modalIsOpen) {
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overflow = "auto";
-  //   }
+  useEffect(() => {
+    if (modalIsOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-  //   return () => {
-  //     document.body.style.overflow = "auto";
-  //   };
-  // }, [modalIsOpen]);
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modalIsOpen]);
 
   return { modalIsOpen, openModal, closeModal, modalContent };
 };
